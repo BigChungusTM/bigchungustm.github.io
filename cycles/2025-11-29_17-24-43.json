@@ -1,0 +1,41 @@
+{
+  "id": "2025-11-29_17-24-43",
+  "timestamp": "2025-11-29T17:24:43.774Z",
+  "eventCount": 2,
+  "summary": {
+    "text": "2 sewage discharge events detected from Thames Water, Severn Trent Water. The longest discharge lasted 15 hours into THE HARTSHAY BROOK.",
+    "confidence": "medium",
+    "generatedAt": "2025-11-29T17:25:04.824Z",
+    "fallback": true
+  },
+  "events": [
+    {
+      "id": "test-001",
+      "company": "Thames Water",
+      "siteId": "TWL00391",
+      "siteName": "Mogden STW",
+      "watercourse": "River Thames",
+      "latitude": 51.4567,
+      "longitude": -0.3421,
+      "startTime": "2025-11-29T05:24:43.771Z",
+      "endTime": "2025-11-29T17:24:43.772Z",
+      "durationMinutes": 720,
+      "durationFormatted": "12h",
+      "mapsLink": "https://maps.google.com/?q=51.4567,-0.3421"
+    },
+    {
+      "id": "test-002",
+      "company": "Severn Trent Water",
+      "siteId": "SVT01750",
+      "siteName": "Hartshay Brook CSO",
+      "watercourse": "THE HARTSHAY BROOK",
+      "latitude": 53.0618,
+      "longitude": -1.4117,
+      "startTime": "2025-11-29T02:24:43.772Z",
+      "endTime": "2025-11-29T17:24:43.772Z",
+      "durationMinutes": 900,
+      "durationFormatted": "15h",
+      "mapsLink": "https://maps.google.com/?q=53.0618,-1.4117"
+    }
+  ]
+}
