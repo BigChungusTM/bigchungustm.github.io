@@ -137,27 +137,31 @@ function renderEventTable(events) {
           📍 ${event.latitude.toFixed(4)}, ${event.longitude.toFixed(4)}
         </a>
       </td>
+      <td>${formatTime(event.startTime)}</td>
       <td>${formatTime(event.endTime)}</td>
     </tr>
   `).join('');
 
   return `
-    <table class="event-table">
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Site ID</th>
-          <th>Site Name</th>
-          <th>Watercourse</th>
-          <th>Duration</th>
-          <th>Location</th>
-          <th>Ended</th>
-        </tr>
-      </thead>
-      <tbody>
-        ${rows}
-      </tbody>
-    </table>
+    <div class="table-wrapper">
+      <table class="event-table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Site ID</th>
+            <th>Site Name</th>
+            <th>Watercourse</th>
+            <th>Duration</th>
+            <th>Location</th>
+            <th>Started</th>
+            <th>Ended</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+    </div>
   `;
 }
 
